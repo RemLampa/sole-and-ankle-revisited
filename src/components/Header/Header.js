@@ -67,6 +67,9 @@ const MainHeader = styled.div`
   @media ${({ theme }) => theme.queries.laptopAndUp} {
     align-items: baseline;
     border-top: none;
+
+    overflow-y: hidden;
+    overflow-x: auto;
   }
 `;
 
@@ -75,7 +78,8 @@ const Nav = styled.nav`
 
   @media ${({ theme }) => theme.queries.laptopAndUp} {
     display: flex;
-    gap: 48px;
+    // gap: clamp(4px, 4vw, 120px);
+    gap: clamp(1rem, 3vw + 1rem, 10rem);
     margin: 0px 48px;
   }
 `;
