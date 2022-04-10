@@ -6,8 +6,6 @@ import {
   DialogContent as BaseDialogContent,
 } from "@reach/dialog";
 
-import { COLORS } from "../../constants";
-
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
@@ -54,7 +52,7 @@ const DialogOverlay = styled(BaseDialogOverlay)`
 
   height: 100vh;
 
-  background-color: hsl(0, 0%, 0%, 80%);
+  background-color: hsla(0, 0%, 0%, 80%);
 
   @media ${({ theme }) => theme.queries.laptopAndUp} {
     display: none;
@@ -66,7 +64,7 @@ const DialogContent = styled(BaseDialogContent)`
   width: 300px;
   margin-left: auto;
 
-  background-color: white;
+  background-color: var(--color-white);
 
   display: flex;
   flex-direction: column;
@@ -95,10 +93,10 @@ const NavLink = styled.a`
   font-size: ${18 / 16}rem;
   text-transform: uppercase;
 
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
 
   &:hover {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
@@ -113,10 +111,10 @@ const Footer = styled.nav`
 const FooterLink = styled.a`
   text-decoration: none;
 
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
 
   &:hover {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
