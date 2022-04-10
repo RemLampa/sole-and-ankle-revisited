@@ -78,8 +78,7 @@ const Nav = styled.nav`
 
   @media ${({ theme }) => theme.queries.laptopAndUp} {
     display: flex;
-    // gap: clamp(4px, 4vw, 120px);
-    gap: clamp(1rem, 3vw + 1rem, 10rem);
+    gap: clamp(1rem, 6vw + 0.05rem, 15rem);
     margin: 0px 48px;
   }
 `;
